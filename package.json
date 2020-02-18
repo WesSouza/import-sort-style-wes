@@ -1,6 +1,6 @@
 {
   "name": "import-sort-style-wes",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Wes' personal import-sort style",
   "keywords": [
     "grouped",
@@ -28,14 +28,14 @@
     "test": "tsdx test"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.25",
+    "@types/jest": "^25.1.2",
     "import-sort": "^6.0.0",
     "import-sort-parser": "^6.0.0",
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-style": "^6.0.0",
-    "tsdx": "^0.12.0",
+    "tsdx": "^0.12.3",
     "tslib": "^1.10.0",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.5"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
