@@ -7,9 +7,11 @@ export default function(styleApi: IStyleAPI): IStyleItem[] {
     isAbsoluteModule,
     isRelativeModule,
     moduleName,
+    name,
     naturally,
     not,
     startsWith,
+    unicode,
   } = styleApi;
 
   const isLocalPackageModule = moduleName(startsWith('~'));
@@ -40,6 +42,7 @@ export default function(styleApi: IStyleAPI): IStyleItem[] {
     {
       match: and(isAbsoluteModule, not(isLocalPackageModule)),
       sort: moduleName(naturally),
+      sortNamedMembers: name(unicode),
     },
 
     // ---
@@ -49,6 +52,7 @@ export default function(styleApi: IStyleAPI): IStyleItem[] {
     {
       match: and(isAbsoluteModule, isLocalPackageModule),
       sort: moduleName(naturally),
+      sortNamedMembers: name(unicode),
     },
 
     // ---
@@ -58,6 +62,7 @@ export default function(styleApi: IStyleAPI): IStyleItem[] {
     {
       match: isRelativeModule,
       sort: moduleName(naturally),
+      sortNamedMembers: name(unicode),
     },
   ];
 }
