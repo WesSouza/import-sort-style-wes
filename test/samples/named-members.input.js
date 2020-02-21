@@ -1,8 +1,8 @@
-import { b, a } from 'lib-a';
+import { b, A } from 'lib-a';
 
 import { d, c } from '~/local-a';
 
 import { f, e } from '../parent';
-import { h, g } from './sibling';
+import { h, J, g } from './sibling';
 
-code(a, b, c, d, e, f, g, h);
+code(A, b, c, d, e, f, g, h, J);
