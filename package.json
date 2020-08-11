@@ -28,13 +28,13 @@
     "test": "tsdx test"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.4",
+    "@types/jest": "^26.0.9",
     "import-sort": "^6.0.0",
     "import-sort-parser": "^6.0.0",
     "import-sort-parser-babylon": "^6.0.0",
     "import-sort-style": "^6.0.0",
-    "tsdx": "^0.12.3",
-    "tslib": "^1.11.1",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.1",
     "typescript": "^3.8.3"
   },
   "eslintConfig": {
